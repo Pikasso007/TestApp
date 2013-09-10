@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Test App</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="name">ФИО</string>
+    <string name="birthday">Дата рождения</string>
+    <string name="sex">Пол</string>
+    <string name="position">Должность</string>
+    <string name="salary">Зарплата</string>
+    <string name="phone">Номер телефона</string>
+    <string name="email">Электронная почта</string>
+    <string name="sendResume">Отправить резюме</string>
+    <string name="sendAnswer">Отправить ответ</string>
+    <string name="letter">Письмо соискателю</string>
+    <string name="alertDialogClose">Закрыть</string>
+    <string name="letterEmployer">Письмо от работодателя</string>
+    <string name="resume">Резюме</string>
+    <string name="responseFromEmployer">Отклик работодателя</string>
+    
+    <string-array name="sexList">
+    	<item>Мужской</item>
+    	<item>Женский</item>
+	</string-array>
+	
+</resources>

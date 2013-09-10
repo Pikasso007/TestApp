@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  	android:padding="@dimen/margin"
+    android:background="@drawable/background">
+            
+	<LinearLayout
+  		android:orientation="vertical"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:gravity="center_horizontal">
+  	    
+  		<EditText
+    		android:id="@+id/nameEditText"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:inputType="textCapWords"
+     		android:hint="@string/name"/>
+
+  		<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:textColor="@android:color/black"
+        	android:text="@string/birthday"
+        	android:textSize="@dimen/textSize"/>
+ 
+    	<DatePicker
+        	android:id="@+id/birthdayDatePicker"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+    	<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:textColor="@android:color/black"        
+        	android:text="@string/sex"
+        	android:textSize="@dimen/textSize"
+        	android:layout_marginTop="@dimen/margin"/>
+ 
+    	<Spinner
+        	android:id="@+id/spinner"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content" 
+        	android:entries="@array/sexList"/>
+
+    	<EditText
+    		android:id="@+id/positionEditText"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+			android:inputType="textCapSentences"
+     		android:hint="@string/position"/>
+    
+    	<EditText
+    		android:id="@+id/salaryEditText"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+			android:inputType="number"
+     		android:hint="@string/salary"/>
+    
+    	<EditText
+    		android:id="@+id/phoneEditText"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+			android:inputType="phone"
+     		android:hint="@string/phone"/>
+    
+    	<EditText
+    		android:id="@+id/emailEditText"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+			android:inputType="textEmailAddress"
+     		android:hint="@string/email"/>
+
+    	<Button
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/sendResume"
+        	android:onClick="onClickSendResume"/>
+
+	</LinearLayout>
+
+</ScrollView>

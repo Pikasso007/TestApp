@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="@dimen/margin">
+
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" 
+    	android:gravity="left">
+
+  		<TextView
+      		android:id="@+id/nameTextView"	    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="@android:color/black"
+        	android:textSize="@dimen/textSize"/>
+ 
+ 		<TextView
+      		android:id="@+id/birthdayTextView"	    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="@android:color/black"
+        	android:textSize="@dimen/textSize"
+        	android:layout_marginTop="@dimen/margin"/>
+    
+ 		<TextView
+      		android:id="@+id/sexTextView"	    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="@android:color/black"
+        	android:textSize="@dimen/textSize"
+        	android:layout_marginTop="@dimen/margin"/>
+ 	 	
+ 		<TextView
+      		android:id="@+id/positionTextView"	    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="@android:color/black"
+        	android:textSize="@dimen/textSize"
+        	android:layout_marginTop="@dimen/margin"/>
+ 	 	 	
+ 		<TextView
+      		android:id="@+id/salaryTextView"	    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="@android:color/black"
+        	android:textSize="@dimen/textSize"
+        	android:layout_marginTop="@dimen/margin"/>
+ 	 	 	 	
+  		<TextView
+      		android:id="@+id/phoneTextView"	    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:clickable="true"
+        	android:textColor="@android:color/black"
+        	android:textSize="@dimen/textSize"
+        	android:layout_marginTop="@dimen/margin"/>
+ 	 
+ 		<TextView
+      		android:id="@+id/emailTextView"	    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:clickable="true"
+      		android:textColor="@android:color/black"
+        	android:textSize="@dimen/textSize"
+        	android:layout_marginTop="@dimen/margin"/>
+   
+ 		<TextView
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/letter"
+        	android:textColor="@android:color/black"
+        	android:textSize="@dimen/textSize"
+        	android:layout_marginTop="@dimen/margin"/>
+        
+    	<EditText
+        	android:id="@+id/letterEditText"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:ems="10"
+        	android:inputType="textMultiLine"
+        	android:lines="5"/>
+
+    	<Button
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/sendAnswer" 
+        	android:layout_gravity="center_horizontal"
+        	android:onClick="onClickSendAnswer"/>
+    
+	</LinearLayout>
+
+</ScrollView>
